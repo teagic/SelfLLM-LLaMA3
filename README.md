@@ -22,7 +22,7 @@ pip install modelscope
 modelscope download --dataset Harris/pretrainSpongeBob pretrain.jsonl --local_dir ./pretrain.jsonl
 ```
 
-### Tokenizertraining code：train_tokenizer.py 
+### Tokenizer training code：train_tokenizer.py 
 
 - It needs to be run in the current directory.
 ```bash
@@ -97,7 +97,7 @@ modelscope download --dataset Harris/pretrainSpongeBob sft_1024.jsonl --local_di
 
 - Based on my computational resources, batch_size should be appropriately reduced.
 
-### SFT long text training code：SFT.py
+### SFT long context training code：SFT.py
 - Execute training process
 
 ```bash
@@ -157,4 +157,5 @@ python eval_model.py --model_mode 2
 ```bash
 https://pan.baidu.com/s/1qCn3EohZEX9yy4zlsY-wiA?pwd=h1ue
 ```
+
 
