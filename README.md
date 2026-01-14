@@ -1,4 +1,4 @@
-#  SelfLLM-LLaMA3
+# SelfLLM-LLaMA3
 \[ English | [中文](README_zh.md) \]
 
 
@@ -87,15 +87,15 @@ modelscope download --dataset Harris/pretrainSpongeBob sft_1024.jsonl --local_di
 ### Modification
 - Several modifications are needed compared to SFT.py:
 
-- The `max_seq_len` parameter needs to be changed to 1024.
+- The max_seq_len parameter needs to be changed to 1024.
 
-- The `data_path` parameter needs to be changed to `sft_1024.jsonl`.
+- The data_path parameter needs to be changed to sft_1024.jsonl.
 
-- When loading in the `init_model` function, `SFT.pth` (i.e., the SFT model from the previous step) should be loaded.
+- When loading in the init_model function, SFT.pth (i.e., the SFT model from the previous step) should be loaded.
 
-- In the `train_epoch` function, it is recommended to save the `save` part as `SFT_long.pth` for comparison with `SFT`.
+- In the train_epoch function, it is recommended to save the save part as SFT_long.pth for comparison with SFT.
 
-- Based on my computational resources, `batch_size` should be appropriately reduced.
+- Based on my computational resources, batch_size should be appropriately reduced.
 
 ### SFT long text training code：SFT.py
 - Execute training process
@@ -130,9 +130,9 @@ python distill.py --use_wandb
 ```
 - The trained model weights can be used directly.
 
-- distill.pth — Uses SFT.pth as a base for training.
+- distill.pth — Use SFT.pth as a base for training.
 
-- distill_long.pth — Uses SFT_1024.pth as a base for training.
+- distill_long.pth — Use SFT_1024.pth as a base for training.
 
 ### Reasoning code：eval_model.py
 
@@ -157,4 +157,3 @@ python eval_model.py --model_mode 2
 ```bash
 https://pan.baidu.com/s/1qCn3EohZEX9yy4zlsY-wiA?pwd=h1ue
 ```
-
