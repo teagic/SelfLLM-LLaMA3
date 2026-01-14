@@ -1,4 +1,4 @@
-# SelfLLM-Engine
+#  SelfLLM-LLaMA3
 \[ English | [中文](README_zh.md) \]
 
 
@@ -157,3 +157,4 @@ python eval_model.py --model_mode 2
 ```bash
 https://pan.baidu.com/s/1qCn3EohZEX9yy4zlsY-wiA?pwd=h1ue
 ```
+
